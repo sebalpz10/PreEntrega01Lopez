@@ -1,13 +1,137 @@
-body {
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+
+  box-sizing: border-box;
+
+  font-family: sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.none {
+  display: none;
+}
+
+.header {
+  background-color: #717575;
+
+  padding-bottom: 5px;
+}
+
+.header_navbar {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.header_logo {
+  margin-top: 5px;
+
+  height: 65px;
+
+  padding-left: 8px;
+}
+
+.header_ul {
+  list-style-type: none;
+
+  display: flex;
+}
+
+.header_li {
+  margin-top: 25px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.header_link {
+  text-decoration: none;
+
+  font-size: 20px;
+
+  color: #000000;
+
+  padding-right: 6px;
+  padding-left: 6px;
+
+  transition: all .5s ease;
+}
+
+.header_link:hover {
+  border-bottom: solid #b3b3b3 3px;
+
+  color: #b3b3b3;
+}
+
+.shop_cart {
+  font-size: 25px;
+
+  color: #000000;
+
+  position: relative;
+
+  top: 24px;
+  right: 26px;
+}
+
+.cart_link {
+  display: flex;
+
+  text-decoration: none;
+}
+
+.cart_number {
+  font-size: 19px;
+
+  color: #000000;
+
+  text-align: center;
+  align-items: center;
+
+  background-color: #b3b3b3;
+
+  height: 22px;
+  width: 22px;
+
+  position: relative;
+
+  top: 15px;
+  right: 25px;
+
+  border-radius: 16px;
+}
+
+/* ------------------------------------ */
+
+.footer {
+  background-color: #717575;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  position: absolute;
+  bottom: 0px;
+
+  width: 100%;
+}
+
+.footer_ul {
+  list-style-type: none;
+
+  display: flex;
+}
+
+.footer_li {
+  margin: 10px;
+}
+
+.footer_icono {
+  height: 25px;
+}
+
+.footer_text {
+  margin-top: 15px;
+  margin-left: 10px;
 }
